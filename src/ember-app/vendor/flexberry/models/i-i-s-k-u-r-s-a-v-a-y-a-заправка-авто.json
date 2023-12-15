@@ -1,0 +1,106 @@
+﻿{
+  "name": "IISKURSAVAYAЗаправкаАвто",
+  "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-заправка-авто",
+  "className": "ЗаправкаАвто",
+  "nameSpace": "IIS.KURSAVAYA",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "колТоплива",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "колонка",
+      "relatedTo": "i-i-s-k-u-r-s-a-v-a-y-a-колонка",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЗаправкаАвтоE",
+      "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-заправка-авто",
+      "attrs": [
+        {
+          "name": "колТоплива",
+          "caption": "Кол топлива",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "НомерКол",
+          "lookupValueField": "номерКол",
+          "relationName": "Колонка",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номерКол",
+              "caption": "Номер кол",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Колонка",
+          "name": "колонка",
+          "relatedTo": "i-i-s-k-u-r-s-a-v-a-y-a-колонка",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ЗаправкаАвтоL",
+      "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-заправка-авто",
+      "attrs": [
+        {
+          "name": "колТоплива",
+          "caption": "Кол топлива",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Колонка",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номерКол",
+              "caption": "Номер кол",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Номер кол",
+          "name": "колонка",
+          "relatedTo": "i-i-s-k-u-r-s-a-v-a-y-a-колонка",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,169 @@
+﻿{
+  "name": "IISKURSAVAYAКлиент",
+  "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-клиент",
+  "className": "Клиент",
+  "nameSpace": "IIS.KURSAVAYA",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаРожд",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "имя",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "телНомер",
+      "type": "number",
+      "flexberryType": "long",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "фамилия",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "банкДанные",
+      "relatedTo": "i-i-s-k-u-r-s-a-v-a-y-a-банк-данные",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КлиентE",
+      "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-клиент",
+      "attrs": [
+        {
+          "name": "имя",
+          "caption": "Имя",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "телНомер",
+          "caption": "Тел номер",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "фамилия",
+          "caption": "Фамилия",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "датаРожд",
+          "caption": "Дата рожд",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "НомерКарт",
+          "lookupValueField": "номерКарт",
+          "relationName": "БанкДанные",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номерКарт",
+              "caption": "Номер карт",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Банк данные",
+          "name": "банкДанные",
+          "relatedTo": "i-i-s-k-u-r-s-a-v-a-y-a-банк-данные",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "КлиентL",
+      "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-клиент",
+      "attrs": [
+        {
+          "name": "имя",
+          "caption": "Имя",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "телНомер",
+          "caption": "Тел номер",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "фамилия",
+          "caption": "Фамилия",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "датаРожд",
+          "caption": "Дата рожд",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "БанкДанные",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номерКарт",
+              "caption": "Номер карт",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Номер карт",
+          "name": "банкДанные",
+          "relatedTo": "i-i-s-k-u-r-s-a-v-a-y-a-банк-данные",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,204 @@
+﻿{
+  "name": "IISKURSAVAYAЗаказ",
+  "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-заказ",
+  "className": "Заказ",
+  "nameSpace": "IIS.KURSAVAYA",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номерЗаказа",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "заправкаАвто",
+      "relatedTo": "i-i-s-k-u-r-s-a-v-a-y-a-заправка-авто",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "клиент",
+      "relatedTo": "i-i-s-k-u-r-s-a-v-a-y-a-клиент",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "товар",
+      "relatedTo": "i-i-s-k-u-r-s-a-v-a-y-a-товар",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЗаказE",
+      "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-заказ",
+      "attrs": [
+        {
+          "name": "номерЗаказа",
+          "caption": "Номер заказа",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "КолТоплива",
+          "lookupValueField": "колТоплива",
+          "relationName": "ЗаправкаАвто",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "колТоплива",
+              "caption": "Кол топлива",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Заправка авто",
+          "name": "заправкаАвто",
+          "relatedTo": "i-i-s-k-u-r-s-a-v-a-y-a-заправка-авто",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Товар",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Товар",
+          "name": "товар",
+          "relatedTo": "i-i-s-k-u-r-s-a-v-a-y-a-товар",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Имя",
+          "lookupValueField": "имя",
+          "relationName": "Клиент",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "имя",
+              "caption": "Имя",
+              "hidden": true,
+              "index": 6
+            }
+          ],
+          "index": 5,
+          "type": "standard",
+          "caption": "Клиент",
+          "name": "клиент",
+          "relatedTo": "i-i-s-k-u-r-s-a-v-a-y-a-клиент",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ЗаказL",
+      "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-заказ",
+      "attrs": [
+        {
+          "name": "номерЗаказа",
+          "caption": "Номер заказа",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЗаправкаАвто",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "колТоплива",
+              "caption": "Кол топлива",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Кол топлива",
+          "name": "заправкаАвто",
+          "relatedTo": "i-i-s-k-u-r-s-a-v-a-y-a-заправка-авто",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Товар",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "товар",
+          "relatedTo": "i-i-s-k-u-r-s-a-v-a-y-a-товар",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Клиент",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "имя",
+              "caption": "Имя",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Имя",
+          "name": "клиент",
+          "relatedTo": "i-i-s-k-u-r-s-a-v-a-y-a-клиент",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

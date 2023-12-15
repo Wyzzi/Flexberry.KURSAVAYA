@@ -1,0 +1,138 @@
+﻿{
+  "name": "IISKURSAVAYAЗаправБак",
+  "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак",
+  "className": "ЗаправБак",
+  "nameSpace": "IIS.KURSAVAYA",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "активен",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "объем",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "типТоплива",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "уровеньЗаливки",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "ценаТопл",
+      "type": "decimal",
+      "flexberryType": "float",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЗаправБакE",
+      "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак",
+      "attrs": [
+        {
+          "name": "объем",
+          "caption": "Объем",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "типТоплива",
+          "caption": "Тип топлива",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "уровеньЗаливки",
+          "caption": "Уровень заливки",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "активен",
+          "caption": "Активен",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "ценаТопл",
+          "caption": "Цена топл",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ЗаправБакL",
+      "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак",
+      "attrs": [
+        {
+          "name": "объем",
+          "caption": "Объем",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "типТоплива",
+          "caption": "Тип топлива",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "уровеньЗаливки",
+          "caption": "Уровень заливки",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "активен",
+          "caption": "Активен",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "ценаТопл",
+          "caption": "Цена топл",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

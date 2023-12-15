@@ -1,0 +1,71 @@
+﻿{
+  "applicationCaption": "KURSAVAYA",
+  "applicationTitle": "KURSAVAYA",
+  "items": [
+    {
+      "link": null,
+      "menuName": "k-u-r-s-a-v-a-y-a",
+      "caption": "KURSAVAYA",
+      "title": "KURSAVAYA",
+      "children": [
+        {
+          "link": "i-i-s-k-u-r-s-a-v-a-y-a-колонка-l",
+          "menuName": null,
+          "caption": "Колонка",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-k-u-r-s-a-v-a-y-a-банк-данные-l",
+          "menuName": null,
+          "caption": "Банк данные",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-k-u-r-s-a-v-a-y-a-клиент-l",
+          "menuName": null,
+          "caption": "Клиент",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-k-u-r-s-a-v-a-y-a-чек-l",
+          "menuName": null,
+          "caption": "Чек",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-k-u-r-s-a-v-a-y-a-заказ-l",
+          "menuName": null,
+          "caption": "Заказ",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-k-u-r-s-a-v-a-y-a-товар-l",
+          "menuName": null,
+          "caption": "Товар",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-k-u-r-s-a-v-a-y-a-заправка-авто-l",
+          "menuName": null,
+          "caption": "Заправка авто",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак-l",
+          "menuName": null,
+          "caption": "Заправ бак",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

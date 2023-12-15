@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "БанкДанные",
+      "projection": "БанкДанныеL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Клиент",
+  "name": "IISKURSAVAYAКлиентE",
+  "className": "КлиентE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-клиент",
+      "modelProjection": "КлиентE"
+    }
+  ]
+}

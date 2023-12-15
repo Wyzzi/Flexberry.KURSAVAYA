@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Заказ",
+      "projection": "ЗаказL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Чек",
+  "name": "IISKURSAVAYAЧекE",
+  "className": "ЧекE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-чек",
+      "modelProjection": "ЧекE"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Колонка",
+      "projection": "КолонкаL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Заправка авто",
+  "name": "IISKURSAVAYAЗаправкаАвтоE",
+  "className": "ЗаправкаАвтоE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-заправка-авто",
+      "modelProjection": "ЗаправкаАвтоE"
+    }
+  ]
+}

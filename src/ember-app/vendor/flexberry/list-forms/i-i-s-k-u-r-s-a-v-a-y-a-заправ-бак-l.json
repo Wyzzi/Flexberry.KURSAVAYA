@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак-e",
+  "editForm": "i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак-e",
+  "external": false,
+  "caption": "Заправ бак",
+  "name": "IISKURSAVAYAЗаправБакL",
+  "className": "ЗаправБакL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак",
+      "modelProjection": "ЗаправБакL"
+    }
+  ]
+}

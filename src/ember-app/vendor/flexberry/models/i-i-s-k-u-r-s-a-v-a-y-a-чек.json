@@ -1,0 +1,84 @@
+﻿{
+  "name": "IISKURSAVAYAЧек",
+  "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-чек",
+  "className": "Чек",
+  "nameSpace": "IIS.KURSAVAYA",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "сумма",
+      "type": "decimal",
+      "flexberryType": "float",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "заказ",
+      "relatedTo": "i-i-s-k-u-r-s-a-v-a-y-a-заказ",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЧекE",
+      "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-чек",
+      "attrs": [
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "НомерЗаказа",
+          "lookupValueField": "номерЗаказа",
+          "relationName": "Заказ",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номерЗаказа",
+              "caption": "Номер заказа",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Заказ",
+          "name": "заказ",
+          "relatedTo": "i-i-s-k-u-r-s-a-v-a-y-a-заказ",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ЧекL",
+      "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-чек",
+      "attrs": [
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,106 @@
+﻿{
+  "name": "IISKURSAVAYAКолонка",
+  "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-колонка",
+  "className": "Колонка",
+  "nameSpace": "IIS.KURSAVAYA",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номерКол",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "заправБак",
+      "relatedTo": "i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КолонкаE",
+      "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-колонка",
+      "attrs": [
+        {
+          "name": "номерКол",
+          "caption": "Номер кол",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ТипТоплива",
+          "lookupValueField": "типТоплива",
+          "relationName": "ЗаправБак",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "типТоплива",
+              "caption": "Тип топлива",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Заправ бак",
+          "name": "заправБак",
+          "relatedTo": "i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "КолонкаL",
+      "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-колонка",
+      "attrs": [
+        {
+          "name": "номерКол",
+          "caption": "Номер кол",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЗаправБак",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "типТоплива",
+              "caption": "Тип топлива",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Тип топлива",
+          "name": "заправБак",
+          "relatedTo": "i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

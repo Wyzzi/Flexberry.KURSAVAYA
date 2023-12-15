@@ -1,0 +1,96 @@
+﻿{
+  "name": "IISKURSAVAYAБанкДанные",
+  "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-банк-данные",
+  "className": "БанкДанные",
+  "nameSpace": "IIS.KURSAVAYA",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "cVV",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаОконч",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерКарт",
+      "type": "number",
+      "flexberryType": "long",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "БанкДанныеE",
+      "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-банк-данные",
+      "attrs": [
+        {
+          "name": "номерКарт",
+          "caption": "Номер карт",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "cVV",
+          "caption": "CVV",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "датаОконч",
+          "caption": "Дата оконч",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "БанкДанныеL",
+      "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-банк-данные",
+      "attrs": [
+        {
+          "name": "номерКарт",
+          "caption": "Номер карт",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "cVV",
+          "caption": "CVV",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "датаОконч",
+          "caption": "Дата оконч",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

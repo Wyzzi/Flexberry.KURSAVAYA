@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Банк данные",
+  "name": "IISKURSAVAYAБанкДанныеE",
+  "className": "БанкДанныеE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-банк-данные",
+      "modelProjection": "БанкДанныеE"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-k-u-r-s-a-v-a-y-a-банк-данные-e",
+  "editForm": "i-i-s-k-u-r-s-a-v-a-y-a-банк-данные-e",
+  "external": false,
+  "caption": "Банк данные",
+  "name": "IISKURSAVAYAБанкДанныеL",
+  "className": "БанкДанныеL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-банк-данные",
+      "modelProjection": "БанкДанныеL"
+    }
+  ]
+}

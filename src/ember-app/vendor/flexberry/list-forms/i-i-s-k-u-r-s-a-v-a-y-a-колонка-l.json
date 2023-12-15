@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-k-u-r-s-a-v-a-y-a-колонка-e",
+  "editForm": "i-i-s-k-u-r-s-a-v-a-y-a-колонка-e",
+  "external": false,
+  "caption": "Колонка",
+  "name": "IISKURSAVAYAКолонкаL",
+  "className": "КолонкаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-колонка",
+      "modelProjection": "КолонкаL"
+    }
+  ]
+}

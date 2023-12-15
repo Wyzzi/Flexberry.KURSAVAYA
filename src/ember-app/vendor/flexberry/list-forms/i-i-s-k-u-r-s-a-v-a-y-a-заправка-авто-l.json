@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-k-u-r-s-a-v-a-y-a-заправка-авто-e",
+  "editForm": "i-i-s-k-u-r-s-a-v-a-y-a-заправка-авто-e",
+  "external": false,
+  "caption": "Заправка авто",
+  "name": "IISKURSAVAYAЗаправкаАвтоL",
+  "className": "ЗаправкаАвтоL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-u-r-s-a-v-a-y-a-заправка-авто",
+      "modelProjection": "ЗаправкаАвтоL"
+    }
+  ]
+}

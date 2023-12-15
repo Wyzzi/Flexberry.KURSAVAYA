@@ -1,0 +1,77 @@
+<h3 class="ui header">{{t "forms.i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.объем
+      class=(if (v-get validationModel "объем" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак-e.объем-caption")
+      data-test-i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак-e-объем=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "объем" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.типТоплива
+      class=(if (v-get validationModel "типТоплива" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак-e.типТоплива-caption")
+      data-test-i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак-e-типТоплива=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "типТоплива" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.уровеньЗаливки
+      class=(if (v-get validationModel "уровеньЗаливки" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак-e.уровеньЗаливки-caption")
+      data-test-i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак-e-уровеньЗаливки=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "уровеньЗаливки" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак-e.активен-caption"}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.активен
+      class=(if (v-get validationModel "активен" "isInvalid") "error")
+      data-test-i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак-e-активен=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "активен" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.ценаТопл
+      class=(if (v-get validationModel "ценаТопл" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак-e.ценаТопл-caption")
+      data-test-i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак-e-ценаТопл=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "ценаТопл" "message")}}
+  </div>
+</form>

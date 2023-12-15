@@ -34,42 +34,42 @@ export default Controller.extend({
             link: 'i-i-s-k-u-r-s-a-v-a-y-a-банк-данные-l',
             caption: i18n.t('forms.application.sitemap.k-u-r-s-a-v-a-y-a.i-i-s-k-u-r-s-a-v-a-y-a-банк-данные-l.caption'),
             title: i18n.t('forms.application.sitemap.k-u-r-s-a-v-a-y-a.i-i-s-k-u-r-s-a-v-a-y-a-банк-данные-l.title'),
-            icon: 'tags',
+            icon: 'address card',
             children: null
           }, {
             link: 'i-i-s-k-u-r-s-a-v-a-y-a-клиент-l',
             caption: i18n.t('forms.application.sitemap.k-u-r-s-a-v-a-y-a.i-i-s-k-u-r-s-a-v-a-y-a-клиент-l.caption'),
             title: i18n.t('forms.application.sitemap.k-u-r-s-a-v-a-y-a.i-i-s-k-u-r-s-a-v-a-y-a-клиент-l.title'),
-            icon: 'phone',
+            icon: 'tags',
             children: null
           }, {
             link: 'i-i-s-k-u-r-s-a-v-a-y-a-чек-l',
             caption: i18n.t('forms.application.sitemap.k-u-r-s-a-v-a-y-a.i-i-s-k-u-r-s-a-v-a-y-a-чек-l.caption'),
             title: i18n.t('forms.application.sitemap.k-u-r-s-a-v-a-y-a.i-i-s-k-u-r-s-a-v-a-y-a-чек-l.title'),
-            icon: 'tags',
+            icon: 'phone',
             children: null
           }, {
             link: 'i-i-s-k-u-r-s-a-v-a-y-a-заказ-l',
             caption: i18n.t('forms.application.sitemap.k-u-r-s-a-v-a-y-a.i-i-s-k-u-r-s-a-v-a-y-a-заказ-l.caption'),
             title: i18n.t('forms.application.sitemap.k-u-r-s-a-v-a-y-a.i-i-s-k-u-r-s-a-v-a-y-a-заказ-l.title'),
-            icon: 'table',
+            icon: 'folder',
             children: null
           }, {
             link: 'i-i-s-k-u-r-s-a-v-a-y-a-товар-l',
             caption: i18n.t('forms.application.sitemap.k-u-r-s-a-v-a-y-a.i-i-s-k-u-r-s-a-v-a-y-a-товар-l.caption'),
             title: i18n.t('forms.application.sitemap.k-u-r-s-a-v-a-y-a.i-i-s-k-u-r-s-a-v-a-y-a-товар-l.title'),
-            icon: 'tasks',
             children: null
           }, {
             link: 'i-i-s-k-u-r-s-a-v-a-y-a-заправка-авто-l',
             caption: i18n.t('forms.application.sitemap.k-u-r-s-a-v-a-y-a.i-i-s-k-u-r-s-a-v-a-y-a-заправка-авто-l.caption'),
             title: i18n.t('forms.application.sitemap.k-u-r-s-a-v-a-y-a.i-i-s-k-u-r-s-a-v-a-y-a-заправка-авто-l.title'),
+            icon: 'table',
             children: null
           }, {
             link: 'i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак-l',
             caption: i18n.t('forms.application.sitemap.k-u-r-s-a-v-a-y-a.i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак-l.caption'),
             title: i18n.t('forms.application.sitemap.k-u-r-s-a-v-a-y-a.i-i-s-k-u-r-s-a-v-a-y-a-заправ-бак-l.title'),
-            icon: 'chart line',
+            icon: 'tags',
             children: null
           }]
         }
